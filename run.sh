@@ -1,24 +1,30 @@
 #!/bin/bash
 
-echo Python 2
+echo -n Python 2 result=
 time python2 -c 'from itertools import imap;print(sum(imap(int,open("BIGDATA2"))))'
 
-echo AWK
+echo -----------------------
+echo -n AWK result=
 time awk '{i+=$1} END{print i}' BIGDATA2
 
-echo Python 3
+echo -----------------------
+echo -n Python 3 result=
 time python3 -c 'print(sum(map(int,open("BIGDATA2"))))'
 
-echo Python 3 No Unicode
+echo -----------------------
+echo -n Python 3 No Unicode result=
 time python3 -c 'print(sum(map(int,open("BIGDATA2","rb"))))'
 
-echo PHP
+echo -----------------------
+echo -n PHP result=
 time php -d 'memory_limit = 2G' -r 'echo  array_sum(file("BIGDATA2"))."\n";echo number_format(memory_get_peak_usage(1)/1024/1024)."M";'
 
-echo Go 
+echo -----------------------
+echo -n Go result=
 time go run sum.go
 
-echo C
+echo -----------------------
+echo -n C result=
 time ./sumc
 
 
