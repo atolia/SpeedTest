@@ -17,7 +17,7 @@ time python3 -c 'print(sum(map(int,open("BIGDATA2","rb"))))'
 
 echo -----------------------
 echo -n PHP result=
-time php -d 'memory_limit = 2G' -r 'echo  array_sum(file("BIGDATA2"))."\n";echo number_format(memory_get_peak_usage(1)/1024/1024)."M";'
+time php -d 'memory_limit = 2G' -r 'echo  array_sum(file("BIGDATA2"))."\n";'
 
 echo -----------------------
 echo -n Go result=
