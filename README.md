@@ -1,4 +1,4 @@
-=== Testing speed various languages
+## Testing speed of various languages
 
 ```
  ./run.sh
