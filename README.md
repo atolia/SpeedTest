@@ -28,21 +28,27 @@ real	0m6.244s
 user	0m6.136s
 sys	0m0.078s
 -----------------------
-PHP result=330616563309
+*PHP 5.6* result=330616563309
 
-real	0m5.290s
-user	0m2.924s
-sys	0m2.034s
+real    *0m52.751s*
+user    0m31.319s
+sys     0m15.405s
+-----------------------
+PHP 7.0 result=330616563309
+
+real    0m4.125s
+user    0m2.898s
+sys     0m1.095s
 -----------------------
 Go result=330616563309
 
-real	0m3.990s
-user	0m3.682s
-sys	0m0.147s
+real    0m2.460s
+user    0m2.369s
+sys     0m0.068s
 -----------------------
 C result=330616563309.000000
 
-real	0m3.397s
-user	0m3.325s
-sys	0m0.059s
+real    0m3.881s
+user    0m3.752s
+sys     0m0.075s
 ```
