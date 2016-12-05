@@ -1,19 +1,19 @@
 #!/bin/bash
 
-# echo -n Python 2 result=
-# time python2 -c 'from itertools import imap;print(sum(imap(int,open("BIGDATA2"))))'
+echo -n Python 2 result=
+time python2 -c 'from itertools import imap;print(sum(imap(int,open("BIGDATA2"))))'
 
-# echo -----------------------
-# echo -n AWK result=
-# time awk '{i+=$1} END{print i}' BIGDATA2
+echo -----------------------
+echo -n AWK result=
+time awk '{i+=$1} END{print i}' BIGDATA2
 
-# echo -----------------------
-# echo -n Python 3 result=
-# time python3 -c 'print(sum(map(int,open("BIGDATA2"))))'
+echo -----------------------
+echo -n Python 3 result=
+time python3 -c 'print(sum(map(int,open("BIGDATA2"))))'
 
-# echo -----------------------
-# echo -n Python 3 No Unicode result=
-# time python3 -c 'print(sum(map(int,open("BIGDATA2","rb"))))'
+echo -----------------------
+echo -n Python 3 No Unicode result=
+time python3 -c 'print(sum(map(int,open("BIGDATA2","rb"))))'
 
 echo -----------------------
 echo -n PHP 5.6 result=
